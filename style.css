@@ -43,7 +43,7 @@ body {
 #linkedin:hover {
     color: rgb(230, 242, 85);
     cursor: pointer;
-    transition: color 0.25s ease;
+    transition: color 250ms ease-in-out;
 }
 
 #github {
@@ -54,20 +54,20 @@ body {
 #github:hover {
     color: rgb(230, 242, 85);
     cursor: pointer;
-    transition: color 0.25s ease;
+    transition: color 250ms ease-in-out;
 }
 
 #cv {
     font-size: 2.5rem;
     color: rgb(230, 234, 235);
     cursor: pointer;
-    transition: color 0.25s ease;
+    transition: color 250ms ease-in-out;
 }
 
 #cv:hover {
     color: rgb(230, 242, 85);
     cursor: pointer;
-    transition: color 0.25s ease;
+    transition: color 250ms ease-in-out;
 }
 
 #hero {
@@ -141,7 +141,7 @@ body {
     background-color: rgb(24, 23, 23);
     color: rgb(230, 242, 85);
     font-size: 1.5rem;
-    padding: 6rem 2rem;
+    padding: 1rem 0.5rem;
     border-radius: 0.4rem;
     border: 0.5rem solid rgb(24, 23, 23);
     overflow: hidden;
@@ -150,7 +150,15 @@ body {
 
 #hero .hero__projects__container__project:hover {
     border: 0.4rem solid #3E97CA;
-    transition: border 0.25s ease;
+    transition: border 250ms ease-in-out;
+}
+
+#hero .hero__projects__container__project__poster {
+    width: 100%;
+}
+
+#hero .hero__projects__container__project__title {
+    margin-bottom: 0;
 }
 
 #hero .hero__info__list {
