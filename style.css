@@ -151,6 +151,7 @@ body {
 #hero .hero__projects__container__project:hover {
     border: 0.4rem solid #3E97CA;
     transition: border 250ms ease-in-out;
+    cursor: pointer;
 }
 
 #hero .hero__projects__container__project__poster {
@@ -184,7 +185,7 @@ body {
     color: rgb(230, 234, 235);
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px) and (max-heigth: 768px) {
     #cv {
         font-size: 2rem;
     }
@@ -212,7 +213,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) and (max-height: 800px) {
     #hero .hero__name__title {
         top: 38%;
         right: 51%;
@@ -223,39 +224,107 @@ body {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+    #hero .hero__name__title {
+        top: 35%;
+        right: 52%;
+    }
+
+    #hero .hero__projects {
+        padding: 2rem 0 5rem;
+    }
+}
+
+@media screen and (max-width: 360px) and (max-height: 640px) {
     .header {
         background-color: rgb(24, 23, 23);
-        top: unset;
-        bottom: 0;
         justify-content: space-evenly;
+        padding: 1rem 1rem 0.75rem;
     }
 
     .header__list {
-        gap: 140px;
+        gap: 120px;
     }
 
-    #hero .hero__name__title {}
+    #cv {
+        font-size: 1.25rem;
+    }
+
+    #cv:hover {
+        color: rgb(230, 234, 235);
+        cursor: unset;
+        transition: unset;
+    }
+
+    #github {
+        font-size: 1.25rem;
+    }
+
+    #github:hover {
+        color: rgb(230, 234, 235);
+        cursor: unset;
+        transition: unset;
+    }
+
+    #linkedin {
+        font-size: 1.25rem;
+    }
+
+    #linkedin:hover {
+        color: rgb(230, 234, 235);
+        cursor: unset;
+        transition: unset;
+    }
+
+    #hero .hero__name__title {
+        font-size: 3.25rem;
+        top: 39%;
+        right: 5%;
+    }
+
 
     #hero .hero__projects {
-        bottom: 7%;
-        padding: 3rem;
+        padding: 1rem 2rem 4rem;
     }
 
     #hero .hero__projects__container {
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
+        padding: 0rem;
     }
 
 
     #hero .hero__projects__container__project {
-        width: 40vw;
-        font-size: 1rem;
-        padding: 1rem 0.75rem;
+        width: unset;
         border: unset;
+        padding: 0.75rem 0.5rem;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #hero .hero__projects__container__project:hover {
+        border: unset;
+        transition: unset;
+        cursor: unset;
+    }
+
+    #hero .hero__projects__container__project__poster {
+        width: 50%;
+    }
+
+    #hero .hero__projects__container__project__title {
+        font-size: 0.75rem;
+        margin: 0;
     }
 
     #hero .hero__info__list {
-        display: none;
+        font-size: 0.625rem;
+    }
+
+    #hero .hero__info__list {
+        bottom: 2%;
     }
 }
