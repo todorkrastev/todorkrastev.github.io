@@ -2,83 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/main.css" />
 
-    <title>todor-krastev</title>
+  <title>Todor Krastev</title>
 </head>
 
 <body>
-    <header class="header">
-        <ul class="header__list">
-            <li class="header__list__item">
-                <a href="./pdfs/todor-krastev-cv.pdf" class="header__list__item__link" target="_blank">
-                    <i id="cv" class="fa-solid fa-address-card"></i>
-                </a>
-            </li>
-            <li class="header__list__item">
-                <a href="https://github.com/todorkrastev" class="header__list__item__link" target="_blank">
-                    <i id="github" class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li class="header__list__item">
-                <a href="https://www.linkedin.com/in/todor-krastev-358a5179/" class="header__list__item__link"
-                    target="_blank">
-                    <i id="linkedin" class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
-    </header>
-    <main>
-        <section id="hero">
-            <img src="./images/dolphin.jpg" alt="the-dolphin-nebula" class="img">
+  <header class="navigation">
+    <div class="navigation__container">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="./pdf/todor-krastev-cv.pdf" class="btn" target="_blank">
+            <i class="fa-solid fa-address-card"></i>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="https://github.com/todorkrastev" class="btn" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="https://www.linkedin.com/in/todor-krastev-358a5179/" class="btn" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
-            <article class="hero__name">
-                <h1 class="hero__name__title">
-                    Todor Krastev
-                </h1>
-            </article>
-            <article class="hero__projects">
-                <div class="hero__projects__container">
-                    <div class="hero__projects__container__project">
-                        <img class="hero__projects__container__project__poster" src="./images/squidgame.jpg"
-                            alt="Red Light Green Light">
-                        <div>
-                            <p class="hero__projects__container__project__title">Red Light Green Light</p>
-                        </div>
-                    </div>
-                    <div class="hero__projects__container__project">
-                        <img class="hero__projects__container__project__poster" src="./images/squidgame.jpg"
-                            alt="Red Light Green Light">
-                        <div>
-                            <p class="hero__projects__container__project__title">Red Light Green Light</p>
-                        </div>
-                    </div>
-                    <div class="hero__projects__container__project">
-                        <img class="hero__projects__container__project__poster" src="./images/squidgame.jpg"
-                            alt="Red Light Green Light">
-                        <div>
-                            <p class="hero__projects__container__project__title">Red Light Green Light</p>
-                        </div>
-                    </div>
+  <main>
+    <section id="hero">
+      <img src="./img/dolphin.jpg" class="img--bg" alt="Background poster" />
+
+      <div class="hero__content">
+        <h1 class="hero__title">Todor Krastev</h1>
+
+        <div class="hero__divider"></div>
+
+        <div class="hero__projects">
+          <ul class="hero__list">
+            <li class="hero__item">
+              <a href="" class="hero__project">
+                <img class="hero__poster" src="./img/squidgame.jpg" alt="Red Light Green Light">
+                <div>
+                  <p class="hero__subtitle">Red Light Green Light</p>
                 </div>
-            </article>
-            <article class="hero__info">
-                <ul class="hero__info__list">
-                    <li class="hero__info__list__item">
-                        <a href="mailto:todorkrastev@web.de"
-                            class="hero__info__list__item__email">todorkrastev@web.de</a>
-                    </li>
-                    <li class="hero__info__list__item">
-                        Konstanz | Deutschland
-                    </li>
-                </ul>
-            </article>
-        </section>
-    </main>
-
+              </a>
+            </li>
+            <li class="hero__item">
+              <a href="" class="hero__project">
+                <img class="hero__poster" src="./img/rps.jpg" alt="Red Light Green Light">
+                <div>
+                  <p class="hero__subtitle">Rock Paper Scissors</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__info">
+          <ul class="hero__info__list">
+            <li class="hero__info__item">
+              <a href="mailto:todorkrastev@web.de" class="hero__info__email">todorkrastev@web.de</a>
+            </li>
+            <li class="hero__info__item">
+              Konstanz | Deutschland
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
