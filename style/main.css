@@ -278,6 +278,10 @@ body {
     transition: border 250ms ease-in-out;
     cursor: pointer;
   }
+
+  #hero .hero__info__item {
+    letter-spacing: 0.125rem;
+  }
 }
 
 @media screen and (min-width: 1366px) {
