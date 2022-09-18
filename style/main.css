@@ -245,6 +245,7 @@ body {
 
   .navigation__list {
     justify-content: flex-start;
+    width: 96%;
   }
 
   .fa-solid:hover,
