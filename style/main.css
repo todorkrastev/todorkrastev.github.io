@@ -23,16 +23,39 @@ body {
   background-color: var(--color-black);
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Header */
+
+.navigation__wrapper {
+  display: none;
+}
+
 /* Hero */
 
 #hero {
   min-height: 100vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -45,6 +68,15 @@ body {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  background: -webkit-gradient(linear,
+      left top, left bottom,
+      from(rgba(0, 0, 0, 1)),
+      color-stop(50%, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 1)));
+  background: -o-linear-gradient(top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%);
   background: linear-gradient(180deg,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 50%,
@@ -52,6 +84,7 @@ body {
 }
 
 #hero .img--bg {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -81,25 +114,32 @@ body {
 }
 
 .navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0.75rem 0;
   width: 90%;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
+
 
 @media screen and (min-width: 375px) {}
 
 @media screen and (min-width: 425px) {}
 
 @media screen and (min-width: 768px) {
-
-  .navigation__list {
-    padding: 1rem 0;
-  }
 
   #hero .hero__title {
     font-size: 3rem;
@@ -114,16 +154,78 @@ body {
 
 @media screen and (min-width: 1200px) {
 
-  .navigation__list {
-    justify-content: flex-start;
-    width: 96%;
+  .navigation__wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 9999;
+  }
+
+  #header .navigation__list {
+    width: 100%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .img--bg {
+    opacity: 0.6;
   }
 
   .fa-solid:hover,
   .fa-brands:hover {
     color: var(--color-primary);
     cursor: pointer;
+    -webkit-transition: color 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out;
     transition: color 250ms ease-in-out;
+  }
+
+  #hero .hero__title {
+    font-size: 8rem;
+  }
+
+  #hero .hero__subtitle {
+    font-size: 3rem;
+  }
+
+  #hero .hero__wrapper {
+    display: unset;
+  }
+
+  #hero .hero__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 50px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 0 auto;
+    width: 56%;
+    margin-top: 8px;
+  }
+
+  #hero .hero__description {
+    font-size: 1.5rem;
+  }
+
+  .navigation__container {
+    display: none;
+  }
+
+  .navigation__list {
+    width: 70%;
   }
 
   .navigation__item {
@@ -135,12 +237,12 @@ body {
   }
 }
 
-@media screen and (min-width: 1366px) {
-}
+@media screen and (min-width: 1366px) {}
 
+@media screen and (min-width: 1440px) {}
 
-@media screen and (min-width: 1440px) {
-}
-
-@media screen and (min-width: 1980px) {
+@media screen and (min-width: 1920px) {
+  #header .navigation__list {
+    max-width: 1920px;
+  }
 }
