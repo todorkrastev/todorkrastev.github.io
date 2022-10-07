@@ -7,15 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style/main.css" />
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#333333">
+  <meta name="msapplication-TileColor" content="#333333">
+  <meta name="theme-color" content="#333333">
+
   <title>Todor Krastev</title>
 </head>
 
 <body>
   <header id="header" class="navigation">
+    <a href="/">
+      <img src="/img/logo.png" class="logo" alt="Logo" />
+    </a>
     <div class="navigation__wrapper">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="./pdf/todor-krastev-cv.pdf" class="btn" target="_blank">
+          <a href="./pdf/cv-todor-krastev.pdf" class="btn" target="_blank">
             <i class="fa-solid fa-address-card"></i>
           </a>
         </li>
@@ -40,31 +51,29 @@
 
   <main>
     <section id="hero">
-      <img src="./img/dolphin.jpg" class="img--bg" alt="Background poster" />
+      <img src="./img/strich.png" class="img--deco" alt="Background poster" />
 
       <div class="hero__content">
-        <h1 class="hero__title">Todor Krastev</h1>
-        <h6 class="hero__subtitle">full-stack developer</h6>
+        <div class="hero__wrapper--about">
+          <p class="hero__greetings">
+            Hi,
+          </p>
+          <p class="hero__greetings">
+            I am
+          </p>
+          <div class="hero__wrapper--heading">
+            <h1 class="hero__title">Todor</h1>
+            <h1 class="hero__title">Krastev</h1>
+          </div>
+          <h6 class="hero__subtitle">Full-Stack Developer</h6>
+        </div>
 
         <div class="hero__divider"></div>
-
-        <div class="hero__wrapper">
-          <ul class="hero__list">
-            <li class="hero__item">
-              <p class="hero__description">A front-end developer passionate about creativity ideas and design thinking
-              </p>
-            </li>
-            <li class="hero__item">
-              <p class="hero__description">A back-end developer interested in AI, Algorithms and Algorithm Engineering
-              </p>
-            </li>
-          </ul>
-        </div>
 
         <div class="navigation__container">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="./pdf/todor-krastev-cv.pdf" class="btn" target="_blank">
+              <a href="./pdf/cv-todor-krastev.pdf" class="btn" target="_blank">
                 <i class="fa-solid fa-address-card"></i>
               </a>
             </li>
@@ -85,56 +94,55 @@
             </li>
           </ul>
         </div>
-
-
-        <!--
-
-        <div class="hero__info">
-          <ul class="hero__info__list">
-            <li class="hero__info__item">
-              <a href="mailto:todorkrastev@web.de" class="hero__info__email">todorkrastev@web.de</a>
-            </li>
-            <li class="hero__info__item">
-              Konstanz | Deutschland
-            </li>
-          </ul>
-        </div>
-        -->
+      </div>
+      <div class="hero__wrapper--desc">
+        <ul class="hero__list">
+          <li class="hero__item">
+            <p class="hero__description">A back-end developer interested in AI, Algorithms and Algorithm Engineering
+            </p>
+          </li>
+          <li class="hero__item">
+            <p class="hero__description">A front-end developer passionate about creativity ideas and design thinking
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
+
     <!--
-  <div class="divider"></div>
+
+    <div class="divider"></div>
+
 
     <section id="project--one" class="info section">
-      <a href="https://github.com/todorkrastev/red-light-green-light" class="info__project" target="_blank">
-        <div class="info__wrapper">
-          <h2 class="info__title">Red Light Green Light</h2>
-          <p class="info__description">
-            Save your favorites easily and always have something to watch.
-          </p>
-        </div>
-
-        <img class="info__poster" src="./img/squidgame.jpg" alt="Red Light Green Light" />
-      </a>
+      <div class="section__wrapper">
+        <a href="https://github.com/todorkrastev/red-light-green-light" class="info__project" target="_blank">
+          <div class="info__wrapper">
+            <h2 class="info__title">Red Light Green Light</h2>
+            <p class="info__description">A game inspired by Squid Game</p>
+          </div>
+  
+          <img class="info__poster" src="./img/squidgame.jpg" alt="Red Light Green Light" />
+        </a>
+      </div>
     </section>
 
     <div class="divider"></div>
-    -->
 
-
-    <!--
-<section id="project--two" class="info section">
-      <div class="info__wrapper">
-        <h2 class="info__title">Download your shows to watch offline.</h2>
-        <p class="info__description">
-          Save your favorites easily and always have something to watch.
-        </p>
+    <section id="project--two" class="info section">
+      <div class="section__wrapper">
+        <a href="https://github.com/todorkrastev/rock-paper-scissors" class="info__project" target="_blank">
+          <div class="info__wrapper">
+            <h2 class="info__title">Rock Paper Scissors</h2>
+            <p class="info__description">A game inspired by my childhood</p>
+          </div>
+  
+          <img class="info__poster" src="./img/rps.jpg" alt="Section poster" />
+        </a>
       </div>
-
-      <img class="info__poster" src="./img/rps.jpg" alt="Section poster" />
     </section>
-  -->
+    -->
   </main>
 </body>
 

@@ -1,5 +1,16 @@
 /* Button --------- */
 .btn {
   border: none;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+/* Divider --------- */
+.divider {
+  background-color: var(--color-secondary);
+  height: 5px;
+}
+
+/* Section --------- */
+.section {
+  padding: 3rem 1rem;
 }
